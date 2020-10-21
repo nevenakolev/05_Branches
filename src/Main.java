@@ -10,6 +10,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.awt.event.MouseEvent;
+
 /**
  * @author Nevena Kolev
  * @version 1.0, 15.10.20
@@ -77,6 +79,9 @@ public class Main extends Application {
                 txt_fahrenheitInput.setText(String.valueOf(fahrenheit));
             }
         };
+
+        btn_convert_CtoF.setOnMouseClicked(hdl_convertCtoF);
+        btn_convert_FtoC.setOnMouseClicked(hdl_convertFtoC);
 
         //Scene
         Scene scn = new Scene(grid, 270, 120);
