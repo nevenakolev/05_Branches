@@ -68,7 +68,10 @@ public class Main extends Application {
         EventHandler hdl_convertCtoF = new EventHandler() {
             @Override
             public void handle(Event event) {
+                double value = Double.parseDouble(txt_celsiusInput.getText());
 
+                double fahrenheit = value * 1.8 + 32;
+                txt_fahrenheitInput.setText(String.valueOf(fahrenheit));
             }
         };
 
